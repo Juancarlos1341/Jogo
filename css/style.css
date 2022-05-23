@@ -52,13 +52,43 @@ main {
 	background-color: var(--darkgray);
 }
 
+input {
+	background-color: var(--white);
+	border: 1px solid var(--black);
+	padding: .5rem;
+}
+
 .table-lobby {
-	margin: 0 auto;
+	margin: 1rem auto;
 	width: 50%;
 }
 
 .table-lobby thead {
 	background-color: var(--black);
 	color: var(--white);
-	padding: 1rem;
+	font-weight: bold;
+}
+
+.table-lobby tbody {
+	overflow-y: scroll;
+  	height: 100px;
+}
+
+
+td, th {
+	border: 1px solid var(--white);
+	padding: .5rem;
+}
+
+td {
+	border: 1px solid #000000;
+	background-color: var(--white);
+}
+
+.form-group {
+	text-align: center;
+}
+
+.form-control {
+	display: block;
 }
