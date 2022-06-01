@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/moblie.css">
 	<title>Bem Vindo</title>
 </head>
 <body>
@@ -22,26 +23,50 @@
 		</nav>
 	</header>
 	<main>
-
-		<form class="form-group" action="#" method="POST">
-			<label>Nome do Jogador<input type="text" name="nick-jogador" required class="form-control"></label>
-		<table class="table-lobby">
-			<thead>
-				<tr>
-					<th>Sala Online</th>
-					<th>Status</th>
-					<th>Participar</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Sala de Juan Carlos</td>
-					<td style="color: green;">Aberta</td>
-					<td><input type="submit" value="Entrar" class="btn btn-success"></td>
-				</tr>
-			</tbody>
-		</table>
-		</form>
+		<div class="box-left mobile-hide">
+			<img src="img/game.svg" class="image">
+			<img src="img/game1.svg" class="image">
+			<img src="img/game.svg" class="image">
+			<img src="img/game1.svg" class="image">
+			<img src="img/game.svg" class="image">
+			<img src="img/game1.svg" class="image">
+		</div>
+		<div class="box-right mobile-hide">
+			<img src="img/game1.svg" class="image">
+			<img src="img/game.svg" class="image">
+			<img src="img/game1.svg" class="image">
+			<img src="img/game.svg" class="image">
+			<img src="img/game1.svg" class="image">
+			<img src="img/game.svg" class="image">
+		</div>
+		<div class="box-center">
+			<h2>Salas Criadas : 2</h2>
+			<form class="form-group" action="#" method="POST">
+				<label style="font-size:1.5rem ;">Nome do Jogador<input type="text" name="nick-jogador" required class="form-control" style="border: 1px solid var(--black);"></label>
+				<table class="table-lobby">
+					<thead>
+						<tr>
+							<th>Sala Online</th>
+							<th>Status</th>
+							<th>Participar</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Sala de Juan Carlos</td>
+							<td style="color: green;">Aberta</td>
+							<td><input type="submit" value="Entrar" class="btn btn-success"></td>
+						</tr>
+						<tr>
+							<td>Sala de Juan Carlos</td>
+							<td style="color: green;">Aberta</td>
+							<td><input type="submit" value="Entrar" class="btn btn-success"></td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+			<a href="#" class="btn btn-light">Criar sala</a>
+		</div>
 	</main>
 	<footer>
 

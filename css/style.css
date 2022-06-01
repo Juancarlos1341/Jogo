@@ -50,17 +50,40 @@ header {
 
 main {
 	background-color: var(--darkgray);
+	text-align: center;
+	height: 500px;
 }
 
-input {
-	background-color: var(--white);
-	border: 1px solid var(--black);
-	padding: .5rem;
+.box-right {
+	width: 25%;
+	float: right;
+	display: inline-block;
+	padding: 1rem;
+	text-align: center;
+}
+
+.box-left {
+	width: 25%;
+	float: left;
+	display: inline-block;
+	padding: 1rem;
+	text-align: center;
+}
+
+.image {
+	width: 5rem;
+	display: grid;
+}
+
+
+.box-center {
+	display: inline-block;
+	width: 50%;
 }
 
 .table-lobby {
-	margin: 1rem auto;
-	width: 50%;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .table-lobby thead {
@@ -83,6 +106,7 @@ td, th {
 td {
 	border: 1px solid #000000;
 	background-color: var(--white);
+	max-height: 1rem;
 }
 
 .form-group {
@@ -91,4 +115,10 @@ td {
 
 .form-control {
 	display: block;
+}
+
+.form-control input {
+	background-color: var(--white);
+	border: 1px solid var(--black);
+	padding: .5rem;
 }

@@ -1,0 +1,9 @@
+@media only screen and (max-width: 960px) {
+   .mobile-hide{ display: none !important; }
+}
+
+@media screen and (max-width:  960px) {
+   .box-center {
+      width: 100%;
+   }
+}
